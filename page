@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анель | Жеке портфолио</title>
+<style>
+:root {
+  --navy: #12263a;
+  --teal: #087f8c;
+  --light: #f3f7fa;
+  --white: #ffffff;
+  --muted: #627487;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--navy);
+  background: var(--light);
+  line-height: 1.75;
+}
+nav {
+  background: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-shadow: 0 2px 15px #12263a12;
+}
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--teal);
+}
+nav a {
+  text-decoration: none;
+  color: var(--navy);
+  margin-left: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav a:hover { color: var(--teal); }
+.hero {
+  background: linear-gradient(125deg,#12263a,#155e75,#087f8c);
+  color: white;
+  padding: 100px 8%;
+}
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a4e8e6;
+  font-size: 13px;
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(34px,5vw,62px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+.hero p {
+  max-width: 750px;
+  font-size: 18px;
+  color: #e1eef3;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.hero-tags span {
+  border: 1px solid #ffffff66;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 22px;
+}
+.section-title {
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+.section-title:after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  background: var(--teal);
+  border-radius: 5px;
+  margin-top: 12px;
+}
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px #12263a0c;
+  margin-bottom: 20px;
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+.date {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 14px;
+}
+.subtitle { color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+}
+.skill {
+  background: white;
+  border-radius: 15px;
+  padding: 24px;
+  border-left: 4px solid var(--teal);
+  box-shadow: 0 4px 18px #12263a0a;
+}
+.skill h3 { margin: 0 0 7px; }
+.skill p { margin: 0; color: var(--muted); }
+ul { padding-left: 22px; }
+li { margin-bottom: 10px; }
+.highlight {
+  background: #e5f5f5;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid var(--teal);
+}
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+footer p { color: #b7c9d7; }
+@media(max-width:650px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 70px 22px; }
+  .card { padding: 24px; }
+  nav { padding: 16px 22px; }
+  nav a { margin: 0 12px 0 0; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ANEL | CV</div>
+  <div>
+    <a href="#about">Мен туралы</a>
+    <a href="#education">Білім</a>
+    <a href="#experience">Тәжірибе</a>
+    <a href="#skills">Дағдылар</a>
+    <a href="#contact">Байланыс</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Жеке портфолио · 2026</div>
+    <h1>Анель<br>Кемеденова</h1>
+    <p>
+      География магистранты | ГИС және ДЗЗ маманы | EdTech & Multimedia Developer
+    </p>
+    <p>
+      Ашық, ақкөңіл, жаңа білімді тез меңгеретін және кез келген ортаға тез бейімделетін маман.
+    </p>
+    <div class="hero-tags">
+      <span>📍 Қазақстан</span>
+      <span>ArcMap & ДЗЗ</span>
+      <span>География & EdTech</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="container">
+  <h2 class="section-title">Мен туралы</h2>
+  <div class="card">
+    <p>
+      Мен – Анельмін. Мінезім ашық, ақкөңілмін және кез келген жаңа міндеттерді немесе бағдарламаларды өте тез алып кете аламын. Адамдармен тіл табысқыш, ұжымда белсенді жұмыс істеймін.
+    </p>
+    <p>
+      Қазіргі уақытта Л.Н. Гумилев атындағы Еуразия ұлттық университетінің магистратурасында білім алып жатырмын. География, геоақпараттық жүйелер (ГИС) және Жерді қашықтықтан зондтау (ДЗЗ) бағыттарын терең зерттеп, тәжірибеде қолданудамын.
+    </p>
+  </div>
+</section>
+
+<section id="education" class="container">
+  <h2 class="section-title">Білімім мен Ғылыми жұмысым</h2>
+
+  <div class="card">
+    <div class="date">Магистратура (2 курс)</div>
+    <h3>Л.Н. Гумилев атындағы Еуразия ұлттық университеті (ЕНУ)</h3>
+    <p class="subtitle">Магистрант</p>
+    <p>
+      Қазіргі уақытта ЕНУ-де магистратураның 2-курсында оқып жатырмын. География саласындағы білімімді тереңдетіп, ғылыми-зерттеу жұмыстарын жүргізудемін.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="date">Бакалавриат</div>
+    <h3>әл-Фараби атындағы Қазақ ұлттық университеті (ҚазҰУ)</h3>
+    <p class="subtitle">География мамандығының түлегі</p>
+    <p>
+      <strong>Дипломдық жұмыс тақырыбы:</strong> <i>«Батыс Қазақстан экономикалық ауданының қалаларының маңызы»</i>.
+    </p>
+    <p>
+      <strong>Практика:</strong> География институтының Экология зертханасында ғылыми-зерттеу практикасынан өтіп, практикалық тәжірибе жинадым.
+    </p>
+  </div>
+</section>
+
+<section id="experience" class="container">
+  <h2 class="section-title">Жұмыс тәжірибесі</h2>
+
+  <div class="grid">
+    <div class="card" style="margin-bottom:0;">
+      <div class="date">2 жыл</div>
+      <h3>«Ustaz» орталығы</h3>
+      <p class="subtitle">Педагогтерді үздіксіз дамыту орталығы</p>
+      <p>
+        Педагогтермен жұмыс істеу, оқу жобаларын үйлестіру және білім беру саласындағы түрлі тапсырмаларды сапалы атқару тәжірибесіне ие болдым.
+      </p>
+    </div>
+
+    <div class="card" style="margin-bottom:0;">
+      <div class="date">6 ай</div>
+      <h3>Kaspi Bank</h3>
+      <p class="subtitle">Қызмет көрсету саласы</p>
+      <p>
+        Клиенттермен жұмыс жасау, сұрақтарына жедел жауап беру және көрсетілетін қызмет сапасын арттыру бағытында мол тәжірибе жинадым.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="container">
+  <h2 class="section-title">Кәсіби және техникалық дағдылар</h2>
+
+  <div class="grid">
+    <div class="skill">
+      <h3>🗺️ ArcMap (ArcGIS)</h3>
+      <p>
+        ArcMap бағдарламасын жиі қолданып, геоақпараттық жүйелер мен картографиялық талдау жасауды меңгеріп жатырмын.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>🛰️ ДЗЗ деректерін өңдеу</h3>
+      <p>
+        Жерді қашықтықтан зондтау (ДЗЗ) деректерін өңдеу, ғарыштық түсірілімдермен жұмыс істеу дағдыларын дамытудамын.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>💻 EdTech & Мультимедиа</h3>
+      <p>
+        Интерактивті білім беру платформаларымен (Quizizz, CORE, Gamma) және мультимедиалық сабақтар жасаумен жұмыс істеймін.
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>🌟 Жеке қасиеттер</h3>
+      <p>
+        Ашық, ақкөңіл, жаңа нәрсені лезде қағып алатын, ұжыммен тез тіл табысатын және жауапты маманмын.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Кәсіби мақсатым</h2>
+  <div class="highlight">
+    География, ГИС, ДЗЗ және цифрлық білім беру технологиялары саласындағы білімімді одан әрі шыңдап, заманауи жобаларға өз үлесімді қосу. Жаңа міндеттерді орындауға әрқашан ашықпын және ізденіс үстіндемін.
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2 class="section-title">Байланыс</h2>
+  <div class="card">
+    <p>📍 Қазақстан</p>
+    <p>🎓 Л.Н. Гумилев атындағы Еуразия ұлттық университеті (ЕНУ) - Магистрант</p>
+    <p>💼 География · ГИС / ДЗЗ · EdTech</p>
+    <p>🌐 GitHub: <a href="https://github.com/anelhamedenovaaa" target="_blank">anelhamedenovaaa</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>Кемеденова Анель</strong>
+  <p>География · ГИС & ДЗЗ · Магистратура</p>
+  <p>© 2026 Жеке портфолио</p>
+</footer>
+
+</body>
+</html>
